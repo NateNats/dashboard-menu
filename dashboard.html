@@ -11,35 +11,48 @@
     <div class="flex h-screen overflow-hidden">
 
         <!--start: sidebar-->
-        <aside : class="left-0 top-0 z-9999 flex h-screen w-72 flex-col bg-blue-200 duration-300 ease-linear bg-gray-900">
+        <aside : class="left-0 top-0 z-9999 flex h-[100%] w-72 flex-col bg-blue-200 duration-300 ease-linear bg-gray-900">
             <!--start: sidebar header-->
-            <div class="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
+            <div class="flex items-center gap-5 px-6 py-5 lg:py-6.5">
+            <img src="src/css/logo learnify.png" alt="learnify logo" class="object-contain w-[20%]">
+            <h1 class="text-white text-3xl font-bold"">Learnify</h1>
             </div>
             <!--end : sidebar header-->
 
-            <div class="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
+            <div class="no-scrollbar flex flex-col justify-between overflow-y-auto duration-300 ease-linear">
                 <!--start: sidebar menu-->
-                    <div class="mt-5 py-4 px-4 lg:mt-9 lg:px-6">
+                    <nav class="mt-5 py-4 px-4 lg:mt-9 lg:px-6 flex flex-col justify-evenly">
                         <!--start: menu group-->
-                            <div>
-                                <h2 class="mb-4 ml-4 text-sm font-medium text-white text-opacity-50">MENU</h2>
-                                <ul class="mb-6 flex flex-col gap-1.5">
+                        <div>
+                            <h2 class="mb-4 ml-4 text-sm font-medium text-white text-opacity-50">MENU</h2>
+                            <ul class="mb-6 flex flex-col gap-1.5">
                                 <li>
-                                        <a href="#" class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-white hover:bg-gray-700 rounded focus:outline-none focus:ring focus:ring-gray-200">
-                                            <img src="src/css/toga.png"  alt="toga image" class="object-contain w-[20%] h-auto">
-                                            <h3 class="text-white">Dashboard</h3>
-                                        </a>
-                                    </li>
+                                <a href="#" class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-white hover:bg-gray-700 rounded focus:outline-none focus:ring focus:ring-gray-200">
+                                    <img src="src/css/toga.png"  alt="toga image" class="object-contain w-[20%] h-auto">
+                                    <h3 class="text-white">Dashboard</h3>
+                                </a>
+                                </li>
 
-                                    <li>
-                                        <a href="#" class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-white hover:bg-gray-700 rounded focus:outline-none focus:ring focus:ring-gray-200">
-                                            <img src="src/css/course2.png" alt="course image" class="object-contain w-[20%] h-auto">
-                                            <h3 class="text-white">Course</h3>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                                <li>
+                                    <a href="#" class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-white hover:bg-gray-700 rounded focus:outline-none focus:ring focus:ring-gray-200">
+                                        <img src="src/css/course2.png" alt="course image" class="object-contain w-[20%] h-auto">
+                                        <h3 class="text-white">Course</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <!--end: menu group-->
+                    </nav>
+
+                    <div class="mt-5 py-4 px-4 lg:px-6 lg:mt-9">
+                        <ul class="mb-6 flex flex-col gap-1.5">
+                            <li>
+                                <a href="#" class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-white hover:bg-gray-700 rounded focus:outline-none focus:ring focus:ring-gray-200">
+                                    <img src="src/css/logout.png" alt="course image" class="object-contain w-[20%] h-auto">
+                                    <h3 class="text-white">Course</h3>
+                                </a>
+                                </li>
+                            </ul>
                     </div>
                 <!--end: sidebar menu-->
             </div>
@@ -80,6 +93,7 @@
             </header>
             <!--end: header-->
 
+            <!--start: main-->
             <main class="bg-slate-200 h-full w-full">
                 <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
                     <!--start: card container-->
@@ -103,8 +117,10 @@
                     <div class="mt-4 md:grid-cols-2 md:gap-6 xl:grid-cols-5 2xl:gap-7.55">
 
                     <!--start: my path-->
-                        <div class="rounded-sm border rounded-md stroke bg-white p-6 shadow-default dark:border-strokedark dark:bg-boxdark">
+                        <div class="h-80 rounded-sm border rounded-md stroke bg-white p-6 shadow-default dark:border-strokedark dark:bg-boxdark">
                             <!--start: tab menu area-->
+
+                            <!--
                             <div class="">
                                 <ul class="flex flex-row">
                                     <li class="pr-6">
@@ -119,6 +135,8 @@
                                     </li>
                                 </ul>
                             </div>
+                            -->
+
                             <!--end: tab menu area-->
 
                             <!--start: table content-->
@@ -133,6 +151,7 @@
 
                 </div>
             </main>
+            <!--end: main-->
         </div>
         <!--end: content area-->
     </div>
