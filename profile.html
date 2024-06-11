@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Coba dashboard</title>
 </head>
 <body class="bg-slate-200">
     <!--start: page wrapper-->
@@ -27,7 +27,7 @@
                             <h2 class="mb-4 ml-4 text-sm font-medium text-white text-opacity-50">MENU</h2>
                             <ul class="mb-6 flex flex-col gap-1.5">
                                 <li>
-                                <a href="#" class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-white hover:bg-gray-700 rounded focus:outline-none focus:ring focus:ring-gray-200">
+                                <a href="dashboard.html" class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-white hover:bg-gray-700 rounded focus:outline-none focus:ring focus:ring-gray-200">
                                     <img src="src/css/toga.png"  alt="toga image" class="object-contain w-[20%] h-auto">
                                     <h3 class="text-white">Dashboard</h3>
                                 </a>
@@ -77,7 +77,7 @@
 
                         <!--user area-->
                         <div class="relative">
-                            <a class="flex items-center gap-4" href="profile.html">
+                            <a class="flex items-center gap-4" href="#">
                                 <span class="hidden text-right lg:block">
                                     <span class="block text-sm font-medium text-black dark:text-white">Nate</span>
                                     <span class="block text-xs font-medium">UX Desinger</span>
@@ -97,55 +97,39 @@
             <main class="">
                 <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
                     <!--start: card container-->
-                    <div class="mt-4 grid grid-cols-12 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-5 2xl:gap-7.55">
+                    <div class="grid grid-rows-3 gap-6">
+                        <!--card 1-->
+                        <div class="h-full xl:col-span-3 rounded-lg border border stroke-black bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+                            <div class="grid grid-rows-2">
+                                <!--card 1: header-->
+                                <div class="h-40 bg-blue-200">
 
-                    <!--card 1-->
-                        <div class="h-56 col-span-1 xl:col-span-3 rounded-sm border border stroke bg-white p-6 shadow-default dark:border-strokedark dark:bg-boxdark">
-                            
-                        </div>
-                    <!--card 1-->
-
-                    <!--card 2-->
-                        <div class="xl:col-span-2 rounded-sm border border-stroke bg-white px-7.5 py-6 shadow-default dark:border-strokedark dark:bg-boxdark">
-                            <div>
-                                
-                            </div>
-                        </div>
-                    <!--card 2-->
-                    </div>
-
-                    <div class="mt-4 md:grid-cols-2 md:gap-6 xl:grid-cols-5 2xl:gap-7.55">
-
-                    <!--start: my path-->
-                        <div class="h-80 rounded-sm border rounded-md stroke bg-white p-6 shadow-default dark:border-strokedark dark:bg-boxdark">
-                            <!--start: tab menu area-->
-
-                            <!--
-                            <div class="">
-                                <ul class="flex flex-row">
-                                    <li class="pr-6">
-                                        <h2 class="text-lg font-medium mb-4">
-                                            <a href="">My tracks</a>
-                                        </h2>
-                                    </li>
-                                    <li>
-                                        <h2 class="text-lg font-medium mb-4">
-                                            <a href="">My Course</a>
-                                        </h2>
-                                    </li>
-                                </ul>
-                            </div>
-                            -->
-
-                            <!--end: tab menu area-->
-
-                            <!--start: table content-->
-                                <div class="">
-                                    
                                 </div>
-                            <!--send: table content-->
+
+                                <!--card 1: content-->
+                                <div class="40 bg-red-200">
+                                
+                                </div>
+                            </div>
                         </div>
-                    <!--end: my path-->
+
+                        <!--card 2-->
+                        <div class="h- xl:col-span-3 rounded-lg border border stroke-black bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+                            <div class="h-20 border flex items-center gap-4 p-6">
+                                <h1 class="text-2xl font-bold">About Me</h1>
+                                    <button type="button" class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none font-medium rounded-full text-center px-2.5 py-0.75">edit</button>
+                            </div>
+                            <p class="p-5 mb-3 text-gray-500 dark:text-gray-400">Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.</p>
+                        </div>
+
+                        <!--card 3-->
+                        <div class="h-full xl:col-span-3 rounded-lg border border stroke-black bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+                            <div class="h-20 border flex items-center gap-4 p-6">
+                                <h1 class="text-2xl font-bold">About Me</h1>
+                                    <button type="button" class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none font-medium rounded-full text-center px-2.5 py-0.75">edit</button>
+                            </div>
+                            <p class="p-5 mb-3 text-gray-500 dark:text-gray-400">Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.</p>
+                        </div>
                     </div>
                     <!--end: card container-->
 
