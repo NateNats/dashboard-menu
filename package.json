@@ -11,5 +11,10 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "tailwindcss": "^2.2.19",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38"
   }
 }
